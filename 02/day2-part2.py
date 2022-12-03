@@ -1,16 +1,4 @@
 lines = open('rps.txt').read().splitlines()
-# Part 1
-moves = {
-    'A Z':3,'B X':1,'C Y':2,
-    'C X':7, 'A Y':8, 'B Z':9,
-    'A X':4, 'B Y':5, 'C Z':6
-}
-totalScore = 0 
-for line in lines:
-    totalScore += moves[line]
-totalScore
-
-# Part 2
 different = {
     'X': {'A':3,'B':1,'C':2},
     'Y': {'A':4,'B':5,'C':6},

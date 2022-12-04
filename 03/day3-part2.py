@@ -1,4 +1,4 @@
-lines = open('rucksack.txt').read().splitlines()
+lines = open('03/rucksack.txt').read().splitlines()
 groups = []
 for i in range(0, len(lines), 3):
     groups.append(lines[i: i+3])

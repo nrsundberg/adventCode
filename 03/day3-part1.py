@@ -1,4 +1,4 @@
-lines = open('rucksack.txt').read().splitlines()
+lines = open('03/rucksack.txt').read().splitlines()
 priority = 0
 for line in lines:
     splitIndex = len(line)//2

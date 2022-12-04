@@ -1,4 +1,4 @@
-lines = open('calories.txt').read().splitlines()
+lines = open('01/calories.txt').read().splitlines()
 # Part 1
 calories = []
 caloriesCounted = 0

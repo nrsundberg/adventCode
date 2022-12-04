@@ -1,4 +1,4 @@
-lines = open('rps.txt').read().splitlines()
+lines = open('02/rps.txt').read().splitlines()
 moves = {
     'A Z':3,'B X':1,'C Y':2,
     'C X':7, 'A Y':8, 'B Z':9,

@@ -1,4 +1,4 @@
-lines = open('rps.txt').read().splitlines()
+lines = open('02/rps.txt').read().splitlines()
 different = {
     'X': {'A':3,'B':1,'C':2},
     'Y': {'A':4,'B':5,'C':6},

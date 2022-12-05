@@ -7,4 +7,4 @@ different = {
 totalScore = 0
 for line in lines:
     totalScore += different[line[2]][line[0]]
-totalScore
+totalScore 

@@ -1,5 +1,6 @@
-crates = open("05/crates.txt").read().splitlines()
-moves = open("05/craneMoves.txt").read().splitlines()
+lines = open("05/crateAndMoves.txt").read().splitlines()
+crates = lines[0:lines.index("") -1]
+moves = lines[lines.index("") + 1:]
 
 cratesCleaned = []
 for crateStack in crates:
@@ -15,9 +16,7 @@ for i in range(0,len(cratesCleaned) + 1):
         val = val.strip()
         columnHolder.append(val)
     cratesCleanedNew.append(columnHolder)
-cratesCleaned = [''.join(ele) for ele in cratesCleanedNew]
-cratesCleanedNew = [list(ele) for ele in cratesCleaned]
-cratesCleaned = cratesCleanedNew
+cratesCleaned = [list(''.join(ele)) for ele in cratesCleanedNew]
 
 def moveCrates(numCratesToMove, crateColumnFrom, crateColumnTo):
     cratesToMoveReversed = cratesCleaned[int(crateColumnFrom) - 1][0:int(numCratesToMove)]

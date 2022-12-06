@@ -4,8 +4,8 @@ crates = lines[0:lines.index("") -1]
 moves = lines[lines.index("") + 1:]
 
 cratesCleaned = [crateStack.replace("[","").replace("]","").replace("    ", ",").replace(" ", ",") for crateStack in crates]
-transposedCrates = list(map(list,list(zip(*[list(crateRow.split(",")) for crateRow in cratesCleaned]))))
-cratesCleaned = [[crate for crate in crateStack if crate] for crateStack in transposedCrates]
+cratesCleaned = list(map(list,list(zip(*[list(crateRow.split(",")) for crateRow in cratesCleaned.copy()]))))
+cratesCleaned = [[crate for crate in crateStack if crate] for crateStack in cratesCleaned]
 
 def moveCrates(movesList, crateList, reverse = True):
     for move in movesList:

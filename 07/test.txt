@@ -1,0 +1,22 @@
+$ cd /
+$ ls
+113975 bqpslnv
+50243 btttmt.nmb
+dir first
+dir second
+43500 lblt
+268766 zmllsrzc.qqq
+$ cd first
+$ ls
+64971 dhmprc.qpl
+$ cd second
+$ ls
+243089 fbfmm
+7952 ljgwgqg
+51001 lzwrpqvq.tfq
+139239 qbn.gbr
+15541 zhvgcc
+dir third
+$ cd third
+$ ls
+289068 lqdsjjm

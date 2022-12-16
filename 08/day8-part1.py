@@ -26,4 +26,3 @@ for row in range(1, len(rows) - 1):
         if any(max < int(rows[row][tree]) for max in surroundingTrees):
             visibleTrees += 1
 visibleTrees + totalEdgeTrees(rows, columns)
-
